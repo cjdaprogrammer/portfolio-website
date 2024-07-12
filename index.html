@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clark's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <div class="hero-content">
+            <div class="hero-image">
+                <img src="clarkg.jpg" alt="Clark James De Luna">
+            </div>
+            <h1>Hi, I'm Clark James De Luna</h1>
+            <h2>Web Developer</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque euismod nisi vitae risus lacinia, nec pulvinar lorem vulputate.</p>
+            <button onclick="location.href='#contact'">Hire Me</button>
+            <a href="Clark_resume.pdf" download="Clark_resume.pdf" onclick="downloadCV(event)"><button>Download CV</button></a>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="profile-pic">
+                <img src="clarkml.jpg" alt="Clark James De Luna">
+            </div>
+            <h3>Web Developer</h3>
+            <p>Hi There! I'm Clark James De Luna. As a passionate and dedicated web developer, I bring a relentless work ethic and a wealth of expertise to every project I undertake. With a keen eye for detail and a deep understanding of the latest web technologies, I am committed to creating innovative, user-friendly, and aesthetically pleasing websites. My journey in web development has been driven by a love for problem-solving and a desire to craft digital experiences that not only meet but exceed client expectations. Whether you need a dynamic, responsive website or a complex web application, I am here to bring your vision to life with precision and creativity. Let's collaborate to elevate your online presence and achieve your digital goals.</p>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <img src="calculator.png" alt="Project 1">
+                <h3>Project 1</h3>
+                <p>Calculator App</p>
+                <a href="https://cjdaprogrammer.github.io/ipt101-calculator-app/" target="_blank">View this Project</a>
+            </div>
+            <div class="portfolio-item">
+                <img src="resume.png" alt="Project 2">
+                <h3>Project 2</h3>
+                <p>Online Resume</p>
+                <a href="https://cjdaprogrammer.github.io/online-resume/" target="_blank">View this Project</a>
+            </div>
+            <div class="portfolio-item">
+                <img src="rock-paper-scissor-game.png" alt="Project 3">
+                <h3>Project 3</h3>
+                <p>Rock Paper and Scissors</p>
+                <a href="https://cjdaprogrammer.github.io/rock-paper-scissor-game/" target="_blank">View this Project</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea>
+            <button type="submit" class="send-button">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Clark James De Luna. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
